@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.603">
+    <testcase classname="This feature will test Trello API" name="Create a new folder, list and task in the test space" time="4.444">
+        <system-out>
+            <![CDATA[Given The test space exists and contains the correct information............passed
+When I create the folder with title "Example folder"........................passed
+And I add a list with title "Example List" to the folder....................passed
+Then I check that the list name is "Example List"...........................passed
+And I add a task with title "Example task" to the list......................passed
+Then I check that the task name is "Example task"...........................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
