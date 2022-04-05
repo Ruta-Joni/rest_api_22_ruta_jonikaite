@@ -2,23 +2,26 @@ package clickUpApi.helpers;
 
 import clickUpApi.domain.Folder;
 import clickUpApi.domain.List;
+import clickUpApi.domain.Task;
 import io.cucumber.java.Scenario;
 
 public class TestCaseContext {
     private static Folder testFolder;
     private  static List testList;
+    private  static Task testTask;
     private static Scenario scenario;
 
     public static void init(){
         testFolder = null;
         testList=null;
+        testTask=null;
     }
 
     public static void setFolder(Folder testFolder){
         TestCaseContext.testFolder = testFolder;
     }
 
-    public static Folder getBoard(){
+    public static Folder getFolder(){
         return testFolder;
     }
 
@@ -30,6 +33,13 @@ public class TestCaseContext {
         return testList;
     }
 
+    public static void setTask(Task testTask){
+        TestCaseContext.testTask = testTask;
+    }
+
+    public static Task getTask(){
+        return testTask;
+    }
 
     public static void setScenario(Scenario scenario){
         TestCaseContext.scenario = scenario;

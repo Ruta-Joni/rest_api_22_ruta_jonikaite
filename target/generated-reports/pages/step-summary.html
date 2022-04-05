@@ -80,9 +80,10 @@ font-src * data: blob: 'unsafe-inline';"/>
       "I check that the list name is {}",
       "I check that the task name is {}",
       "The test space exists and contains the correct information",
-      "I add a task with title {} to the list",
       "I create the folder with title {}",
-      "I add a list with title {} to the folder"
+      "I delete created task",
+      "I add a list with title {} to the folder",
+      "I add a task with title {} to the list"
     ],
     "datasets": [
       {
@@ -92,9 +93,11 @@ font-src * data: blob: 'unsafe-inline';"/>
           1,
           1,
           1,
+          1,
           1
         ],
         "backgroundColor": [
+          "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
           "rgba(40, 167, 69, 1.000)",
@@ -111,9 +114,11 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
           "rgba(220, 53, 69, 1.000)",
@@ -130,9 +135,11 @@ font-src * data: blob: 'unsafe-inline';"/>
           0,
           0,
           0,
+          0,
           0
         ],
         "backgroundColor": [
+          "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
           "rgba(255, 193, 7, 1.000)",
@@ -156,7 +163,7 @@ font-src * data: blob: 'unsafe-inline';"/>
           "stacked": true,
           "scaleLabel": {
             "display": true,
-            "labelString": "6 Steps"
+            "labelString": "7 Steps"
           },
           "stepSize": 0.0
         }
@@ -268,7 +275,7 @@ font-src * data: blob: 'unsafe-inline';"/>
                                 <a class="nav-link " href="pages/feature-summary.html">All Features</a>
                     </li>
             </ul>
-            <span class="text-light">2022-04-05 23:46:48</span>
+            <span class="text-light">2022-04-06 00:59:19</span>
         </div>
     </nav>
     <main role="main" class="container">
@@ -294,7 +301,7 @@ font-src * data: blob: 'unsafe-inline';"/>
             <div class="card-body">
             <ul class="list-group list-group-flush" data-cluecumber-item="step-summary">
                 <li class="list-group-item">
-                    6         Steps
+                    7         Steps
  in
                     <br>
                     1         Scenario
@@ -392,30 +399,12 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right failedCell">0</td>
                         <td class="text-right skippedCell">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 02s 705ms</a>
+                                <a href="pages/scenario-detail/scenario_1.html">0m 02s 542ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 02s 705ms</a>
+                                <a href="pages/scenario-detail/scenario_1.html">0m 02s 542ms</a>
                         </td>
-                        <td class="text-right small">0m 02s 705ms</td>
-                    </tr>
-                    <tr>
-                        <td class="text-left">
-                            <span data-toggle="tooltip" title="clickUpApi.stepdefinitions.ClickUpSteps.createTask(java.lang.String)">
-                                <a href="pages/step-scenarios/step_079596523.html">I add a task with title {} to the list</a>
-                            </span>
-                        </td>
-                        <td class="text-right"><strong>1</strong></td>
-                        <td class="text-right passedCell">1</td>
-                        <td class="text-right failedCell">0</td>
-                        <td class="text-right skippedCell">0</td>
-                        <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 000ms</a>
-                        </td>
-                        <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 000ms</a>
-                        </td>
-                        <td class="text-right small">0m 00s 000ms</td>
+                        <td class="text-right small">0m 02s 542ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -428,12 +417,30 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right failedCell">0</td>
                         <td class="text-right skippedCell">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 971ms</a>
+                                <a href="pages/scenario-detail/scenario_1.html">0m 01s 024ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 971ms</a>
+                                <a href="pages/scenario-detail/scenario_1.html">0m 01s 024ms</a>
                         </td>
-                        <td class="text-right small">0m 00s 971ms</td>
+                        <td class="text-right small">0m 01s 024ms</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <span data-toggle="tooltip" title="clickUpApi.stepdefinitions.ClickUpSteps.deleteCreatedTask()">
+                                <a href="pages/step-scenarios/step_01443387383.html">I delete created task</a>
+                            </span>
+                        </td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right passedCell">1</td>
+                        <td class="text-right failedCell">0</td>
+                        <td class="text-right skippedCell">0</td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 349ms</a>
+                        </td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 349ms</a>
+                        </td>
+                        <td class="text-right small">0m 00s 349ms</td>
                     </tr>
                     <tr>
                         <td class="text-left">
@@ -446,12 +453,30 @@ font-src * data: blob: 'unsafe-inline';"/>
                         <td class="text-right failedCell">0</td>
                         <td class="text-right skippedCell">0</td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 699ms</a>
+                                <a href="pages/scenario-detail/scenario_1.html">0m 01s 694ms</a>
                         </td>
                         <td class="text-right small">
-                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 699ms</a>
+                                <a href="pages/scenario-detail/scenario_1.html">0m 01s 694ms</a>
                         </td>
-                        <td class="text-right small">0m 00s 699ms</td>
+                        <td class="text-right small">0m 01s 694ms</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">
+                            <span data-toggle="tooltip" title="clickUpApi.stepdefinitions.ClickUpSteps.createNewTask(java.lang.String)">
+                                <a href="pages/step-scenarios/step_02114704181.html">I add a task with title {} to the list</a>
+                            </span>
+                        </td>
+                        <td class="text-right"><strong>1</strong></td>
+                        <td class="text-right passedCell">1</td>
+                        <td class="text-right failedCell">0</td>
+                        <td class="text-right skippedCell">0</td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 750ms</a>
+                        </td>
+                        <td class="text-right small">
+                                <a href="pages/scenario-detail/scenario_1.html">0m 00s 750ms</a>
+                        </td>
+                        <td class="text-right small">0m 00s 750ms</td>
                     </tr>
                 </tbody>
             </table>
@@ -464,7 +489,7 @@ font-src * data: blob: 'unsafe-inline';"/>
 
 <footer class="footer navbar-dark">
     <div class="container-fluid">
-        <span>Cluecumber Report Plugin version 2.7.0 - Report generated on 2022-04-05 23:46:48.</span>
+        <span>Cluecumber Report Plugin version 2.7.0 - Report generated on 2022-04-06 00:59:19.</span>
     </div>
 </footer>    </body>
     </html>

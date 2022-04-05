@@ -5,6 +5,8 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import clickUpApi.helpers.TestCaseContext;
 
+import static clickUpApi.clients.ClickUpClient.deleteFolder;
+
 
 public class Hooks {
 
@@ -17,7 +19,7 @@ public class Hooks {
 
     @After
     public void afterEveryScenario(){
-
+        deleteFolder();
         System.out.println("Scenario is being finished");
     }
 }

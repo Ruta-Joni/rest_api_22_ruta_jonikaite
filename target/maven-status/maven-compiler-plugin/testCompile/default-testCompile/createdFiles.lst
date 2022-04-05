@@ -7,3 +7,4 @@ clickUpApi\stepdefinitions\Hooks.class
 clickUpApi\helpers\TestCaseContext.class
 clickUpApi\clients\ClickUpClient.class
 clickUpApi\constants\ProjectConstants.class
+clickUpApi\domain\Task.class

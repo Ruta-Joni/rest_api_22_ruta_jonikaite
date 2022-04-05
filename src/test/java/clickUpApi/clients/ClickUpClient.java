@@ -1,5 +1,5 @@
 package clickUpApi.clients;
-import com.fasterxml.jackson.databind.util.JSONPObject;
+import clickUpApi.helpers.TestCaseContext;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -42,6 +42,42 @@ public class ClickUpClient {
                 .body(obj)
                 .when()
                 .post("https://api.clickup.com/api/v2/folder/"+folder+"/list")
+                .then().log().all()
+                .statusCode(200)
+                .extract().response();
+    }
+
+    public static Response createTask(JSONObject obj, String list){
+        return RestAssured
+                .given().log().all()
+                .contentType(ContentType.JSON)
+                .header("Authorization", API_KEY)
+                .body(obj)
+                .when()
+                .post("https://api.clickup.com/api/v2/list/"+list+"/task")
+                .then().log().all()
+                .statusCode(200)
+                .extract().response();
+    }
+
+    public static Response deleteTask(String task){
+        return RestAssured
+                .given().log().all()
+                .contentType(ContentType.JSON)
+                .header("Authorization", API_KEY)
+                .when()
+                .delete("https://api.clickup.com/api/v2/task/"+task)
+                .then().log().all()
+                .statusCode(204)
+                .extract().response();
+    }
+    public static Response deleteFolder(){
+        return RestAssured
+                .given().log().all()
+                .contentType(ContentType.JSON)
+                .header("Authorization", API_KEY)
+                .when()
+                .delete("https://api.clickup.com/api/v2/folder/"+ TestCaseContext.getFolder().getId())
                 .then().log().all()
                 .statusCode(200)
                 .extract().response();

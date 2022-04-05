@@ -1,4 +1,4 @@
-Feature: This feature will test Trello API
+Feature: This feature will test ClickUp API
 
   Scenario: Create a new folder, list and task in the test space
     Given The test space exists and contains the correct information
@@ -7,3 +7,4 @@ Feature: This feature will test Trello API
     Then I check that the list name is "Example List"
     And  I add a task with title "Example task" to the list
     Then I check that the task name is "Example task"
+    And I delete created task
